@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Card Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>War Card Game</h1>
+        </header>
+        
+        <div class="game-play">
+            <div class="player">
+                <h2>You</h2>
+                <p>Score: <span id="player1-score">0</span></p>
+                <div class="card" id="player-card-container">
+                    <img id="player-card" src="https://deckofcardsapi.com/static/img/back.png" alt="Player 1's Card">
+                </div>
+            </div>
+            
+            <div class="player">
+                <h2>Computer</h2>
+                <p>Score: <span id="player2-score">0</span></p>
+                <div class="card" id="computer-card-container">
+                    <img id="computer-card" src="https://deckofcardsapi.com/static/img/back.png" alt="Player 2's Card">
+                </div>
+            </div>
+        </div>
+        <div class="battle">
+            <p id="battle-result"></p>
+            <button id="draw-button">Draw Card</button>
+            <button id="new-deck-button" style="display:none;">Get New Deck</button>
+            
+        </div>
+
+        <div class="remain">
+            <p>Remaining Cards: <span id="remaining-cards">52</span></p>
+            <div class="remaining-cards-image">
+                <img id="remaining-cards-img" src="https://deckofcardsapi.com/static/img/back.png" alt="Deck image">
+            </div>
+        </div>
+
+        <footer>
+            <p>Created by Mae - War Card Game</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
